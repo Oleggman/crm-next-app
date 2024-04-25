@@ -21,7 +21,9 @@ const labelStyles = {
 
 export const StatusLabel = ({children, status}: StatusLabelProps) => {
     return (
-        <div className={`inline-flex items-center py-1 px-3.5 rounded-3xl text-sm font-medium ${labelStyles[status]}`}>
+        <div className={
+            `inline-flex items-center py-1 px-3.5 rounded-3xl text-sm font-medium ${labelStyles[status]}`
+        }>
             <div className='w-1 h-1 mr-2 rounded-full bg-current'/>
             {children}
         </div>
