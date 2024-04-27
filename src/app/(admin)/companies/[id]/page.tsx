@@ -1,16 +1,13 @@
-import Header from '@/app/components/header'
+import React from 'react';
 
 export interface PageProps {
-	params: { id: string };
-}
-export function generateStaticParams() {
-  return [{ id: '1' }, { id: '2' }, { id: '3' }]
+  params: { id: string };
 }
 
-export default function Page ({params}: PageProps) {
-	return (
-		<main>
-			<Header>Companies ({params.id})</Header>
-		</main>
-	);
+export default function Page({ params }: PageProps) {
+  return (
+    <div className="py-6 px-10">
+      <p>{`Information about company (${params.id})`}</p>
+    </div>
+  );
 }
