@@ -9,7 +9,7 @@ export interface PageProps {}
 
 export default async function Page({}: PageProps) {
   const data = await getSummarySales();
-
+  
   return (
     <DashboardCard label="Sales details">
       <SummaryTable
