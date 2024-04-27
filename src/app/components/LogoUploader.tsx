@@ -25,7 +25,7 @@ export const LogoUploader = ({
 					className="mb-1"
           width={48}
           height={48}
-          src="/icons/upload.svg"
+          src="icons/upload.svg"
           alt="upload"
 				/>
 				{placeholder && (
