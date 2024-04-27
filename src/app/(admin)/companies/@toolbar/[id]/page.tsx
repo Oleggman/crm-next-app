@@ -3,11 +3,8 @@ import Header from '@/app/components/header';
 
 export interface PageProps {}
 
-export async function generateStaticParams() {
-  const ids = ['1', '2', '3'];
-  return ids.map((id) => ({
-    params: { id },
-  }));
+export function generateStaticParams() {
+  return [{ id: '1' }, { id: '2' }, { id: '3' }]
 }
 
 export default function Page({}: PageProps) {
